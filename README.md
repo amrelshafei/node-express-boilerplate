@@ -27,11 +27,11 @@ By default, the base address of the The API is `localhost:5000/api`. However thi
 ## **Querying**
 
 An HTTP request URL is capable of providing a request query that can be used for querying through the resources. For example, a URL for querying through resources that follow the **Item** abstraction may look like this:  
-- `https://api.amrelshafei.com/resources/items?type=Book&price=lt:10`
+- `https://amrelshafei.com/api/resources/items?type=Book&price=lt:10`
 
 Here the request URL has the endpoint `/resources/items` and the query string that's preceded with a `?` symbol and has an `&` symbol seperator between each query string parameter `{query_element_key}={query_element_value}`.
 
-In contrast, an HTTP request URL that looks like this `https://api.amrelshafei.com/resources/{abstraction_name}?{query_element_key1}={query_element_value1}&{query_element_key2}={query_element_value2}&...&{query_element_keyN}={query_element_valueN}` will have its query string converted to the following query object and stored inside the request object as a property:
+In contrast, an HTTP request URL that looks like this `https://amrelshafei.com/api/resources/{abstraction_name}?{query_element_key1}={query_element_value1}&{query_element_key2}={query_element_value2}&...&{query_element_keyN}={query_element_valueN}` will have its query string converted to the following query object and stored inside the request object as a property:
 ```javascript
 query: {
   someQueryElementKey1: someQueryElementValue1,
@@ -50,8 +50,8 @@ In order to perform efficient query operations such as sorting, field selecting,
 
 ### ***On my Web API***
 for example, from your browser:  
-`http://api.amrelshafei.com/resources/screens`  
-`http://api.amrelshafei.com/resources/skills`
+`http://amrelshafei.com/api/resources/screens`  
+`http://amrelshafei.com/api/resources/skills`
 
 ### ***On local host***
 
